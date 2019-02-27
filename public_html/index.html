@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+Student: Alexander Vahid
+StudentID: 991445119
+Course: INFO16206
+Project: Assignment1
+-->  
+
+<html>
+    <head>
+        <title>Assignment1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link rel="stylesheet" href="./css/stylepredetors.css">
+    </head>
+    <body>
+        <div class="header">           
+            <img id="imgHeader" src="./Images/Mountain_Header.jpg" alt="">
+            <img id="imgIcon" src="./Images/countries-1295969_960_720.png" alt="">
+            <h1>WORLD COUNTRIES</h1>    
+        </div>
+        
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Russia.html">Russia</a></li>
+                <li><a href="Greece.html"> Greece</a></li>
+                <li><a href="United States.html">United States</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <img id="worldMap" src="./Images/World-Map.png" alt="">
+            <div id="shape" ></div>
+            
+            <p id="message" class="p1">Find your city!</p> 
+            <input id="country" type="text">
+            <button class="findCountry" onClick="find()">Find City</button>    
+        </div>
+        
+         <p class="p2">There are over 190 countries in the world today, each with there own variety of language, culture and 
+                lifestyle. It brings a lot of diversity to our world and its always fun <br>to see how different people from around
+                the world do things. So whether your a student or just passing by or maybe just a curious individual, this site 
+                can help you <br>get familiar with some of these countries and hopefully help you pass your geography class if your a 
+                student.</p>
+        
+        <div class="row">
+            <div class="column">
+                <img id="pic2" src="./Images/WorldPic2.jpg" alt="">
+            </div>
+            <div class="column">            
+                <img id="pic5" src="./Images/WorldPic5.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="pic4" src="./Images/WorldPic4.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img id="pic1" src="./Images/WorldPic1.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="pic6" src="./Images/WorldPic6.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="pic3" src="./Images/WorldPic3.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class='footer'>
+            <p class="p3">Contact Us</p>
+            <p class="p4">E-mail: atvahid@hotmail.com <br>Phone Number: 905-199-2647 <br> </p>
+        </div>
+        
+        <script>
+            document.bgColor="#00001F";
+
+            //function to indicate the city on the map with red dot
+            function find(){
+                element = document.getElementById("country");
+                var dot = document.getElementById("shape");
+                var message = document.getElementById("message");
+                
+                switch(element.value){
+                    case 'Moscow': case 'moscow':
+                        dot.style.visibility="visible";
+                        dot.style.left="765px";
+                        dot.style.top="430px";
+                        break;
+                       
+                    case 'Ottawa': case 'ottawa':
+                        dot.style.visibility="visible";
+                        dot.style.left="385px";
+                        dot.style.top="464px";
+                        break;
+                        
+                    case 'Athens': case 'athens':
+                        dot.style.visibility="visible";
+                        dot.style.left="718px";
+                        dot.style.top="488px";
+                        break;
+                        
+                    case 'Washington DC': case 'washington DC': case 'washington':
+                        dot.style.visibility="visible";
+                        dot.style.left="385px";
+                        dot.style.top="484px";
+                        break;
+                        
+                    case 'Tokyo': case 'tokyo':
+                        dot.style.visibility="visible";
+                        dot.style.left="1097px";
+                        dot.style.top="498px"; 
+                        break;
+                        
+                    case 'Bogota': case 'bogota':
+                        dot.style.visibility="visible";
+                        dot.style.left="400px";
+                        dot.style.top="596px"; 
+                        break;
+                        
+                    case 'Rome': case 'rome':
+                        dot.style.visibility="visible";
+                        dot.style.left="684px";
+                        dot.style.top="477px";
+                        break;
+                        
+                    case 'Tehran': case 'tehran':
+                        dot.style.visibility="visible";
+                        dot.style.left="813px";
+                        dot.style.top="500px";
+                        break;
+                        
+                    case 'Madrid': case 'madrid':
+                        dot.style.visibility="visible";
+                        dot.style.left="627px";
+                        dot.style.top="480px"; 
+                        break;
+                        
+                    case 'Beijing': case 'beijing':
+                        dot.style.visibility="visible";
+                        dot.style.left="1021px";
+                        dot.style.top="482px";
+                        break;
+                    
+                    case 'Berlin': case 'berlin':
+                        dot.style.visibility="visible";
+                        dot.style.left="682px";
+                        dot.style.top="440px";
+                        break;
+                        
+                    case 'Oslo': case 'oslo':
+                        dot.style.visibility="visible";
+                        dot.style.left="675px";
+                        dot.style.top="410px";
+                        break; 
+                            
+                    case 'Helsinki': case 'helsinki':
+                        dot.style.visibility="visible";
+                        dot.style.left="724px";
+                        dot.style.top="406px";
+                        break;
+                        
+                    case 'Nairobi': case 'nairobi':
+                        dot.style.visibility="visible";
+                        dot.style.left="761px";
+                        dot.style.top="616px";
+                        break;
+                             
+                    case 'Denver': case 'denver':
+                        dot.style.visibility="visible";
+                        dot.style.left="290px";
+                        dot.style.top="483px";    
+                        break;
+                        
+                    case 'Seattle': case 'seattle':
+                        dot.style.visibility="visible";
+                        dot.style.left="238px";
+                        dot.style.top="458px";    
+                        break;
+                        
+                    case 'Paris': case 'paris':
+                        dot.style.visibility="visible";
+                        dot.style.left="646px";
+                        dot.style.top="454px";    
+                        break;
+                        
+                    case 'London': case 'london':
+                        dot.style.visibility="visible";
+                        dot.style.left="637px";
+                        dot.style.top="440px";    
+                        break;
+                    
+                    default: 
+                        message.innerHTML = "Sorry, couldn't find that one";
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
